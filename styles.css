@@ -1,0 +1,116 @@
+body{
+    background-image: url(images/mountainrange.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+.second_body{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 0;
+}
+fieldset {
+    margin-bottom: 20px;
+    border: none;
+}
+.placeholder {
+    display: flex;
+    flex: 1;
+    max-width: 950px;
+    min-height: 150px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.form_look {
+    background-color: rgb(255, 255, 255);
+    width: 950px;
+    min-width: 500px;
+    height: 1050px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+header, .inside_form, .bottom{
+    margin-left: 75px;
+    margin-right: 75px;
+}
+header > p {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: rgb(49, 49, 49);
+}
+form {
+    background-color: rgb(245, 245, 245);
+}
+.inside_form > p {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color:rgb(49, 49, 49);
+}
+
+label {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: rgba(0, 5, 10, 0.712);
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+.brass-image {
+    display: flex;
+    flex: 1;
+    min-width: 400px;;
+    max-height: 200px;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(128, 128, 128, .5);
+}
+
+img {
+    margin: 5px;
+}
+button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color:rgb(127, 168, 255);
+    color: white;
+    width: 175px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: 700;
+}
+.account_login {
+    font-weight: 600;
+    font-size: 1rem;
+    color:rgb(49, 49, 49);
+}
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border-style: hidden;
+    height: 30px;
+    width: 200px;
+}
+
+a{
+    color: rgb(127, 168, 255);
+}
+@media only screen and (max-width: 1383px) {
+    .form_look {
+    justify-content: start;}
+
+    .brass-image{
+        transition: 2ms;
+        max-height: 150px;
+    }
+    .placeholder{
+        margin-bottom: 0;
+    }
+}
