@@ -14,8 +14,27 @@ body{
     margin: 0;
 }
 fieldset {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 20px;
+    margin-right: 200px;
     border: none;
+}
+.right-side{
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
+}
+.left-side{
+    display: flex;
+    flex-direction: column;
+}
+.right-side > input {
+    margin-right: 5px;
+    margin-bottom: 20px;
+}
+.left-side > input {
+    margin-bottom: 20px;
 }
 .placeholder {
     display: flex;
@@ -98,6 +117,34 @@ input {
     height: 30px;
     width: 200px;
 }
+[class^='valid'] {
+    color: rgb(255, 0, 0);
+    font-size: .75rem;
+    font-style: oblique;
+}
+button:hover {
+    background-color: rgb(79, 134, 252);
+    cursor: pointer;
+}
+input:focus {
+    box-shadow: 3px 3px 3px rgb(127, 168, 255);
+}
+input:active {
+    box-shadow: 3px 3px 5px rgb(127, 168, 255);
+}
+input:hover {
+    background-color: rgb(127, 168, 255, .3);
+}
+/*input:invalid {
+    border: solid rgb(255, 0, 0, .5);
+}
+input:valid {
+    border: solid rgba(0, 128, 0, .5);
+}
+input::selection {
+    border: solid rgb(127, 168, 255);
+}*/
+
 
 a{
     color: rgb(127, 168, 255);
@@ -107,7 +154,6 @@ a{
     justify-content: start;}
 
     .brass-image{
-        transition: 2ms;
         max-height: 150px;
     }
     .placeholder{
