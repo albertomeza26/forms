@@ -32,33 +32,36 @@ Sign up <em>now</em> to get started.
 <div class="right-side">
     <label for="first_name">First Name</label>
     <input type="text" id="first_name" name="first_name" placeholder="John" minlength="1" maxlength="20" required>
+    <div class="valid-first-name" id="valid"></div>
 </div>
 <div class="left-side">
     <label for="last_name">Last name</label>
     <input type="text" id="last_name" name="last_name" placeholder="Doe" minlength="1" maxlength="20" required>
+    <div class="valid-last-name" id="valid"></div>
 </div>
 </fieldset>
 <fieldset>
 <div class="right-side">
     <label for="email">Email</label>
     <input type="email" id="email" name="email" placeholder="johndoe@email.com" required>
-    <div class="valid-email"></div>
+    <div class="valid-email" id="valid"></div>
 </div>
 <div class="left-side">
     <label for="phone_number">Phone Number</label>
-    <input type="tel" id="phone_number" name="phone_number">
+    <input type="tel" id="phone_number" name="phone_number" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    <div class="valid-phone" id="valid"></div>
 </div>
 </fieldset>
 <fieldset>
 <div class="right-side">
     <label for="password">Password</label>
     <input type="password" id="password" name="password" minlength="8" maxlength="20" required>
-    <div class="valid-password"></div>
+    <div class="valid-password" id="valid"></div>
 </div>
 <div class="left-side">
     <label for="confirm_password">Confirm Password</label>
-    <input type="password" id="confirm_password" name="confirm_password">
-    <div class="valid-match"></div>
+    <input type="password" id="confirm_password" name="confirm_password" required>
+    <div class="valid-match" id="valid"></div>
 </div>
 </fieldset>
 </div>
@@ -67,6 +70,10 @@ Sign up <em>now</em> to get started.
 <button class="check_form">Create Account</button>
 <div class="account_login">Already have an account? <a>Log In</a> </div>
 </div>
+<footer>Created by Alberto Meza
+    <a href="https://github.com/albertomeza26"><img alt="Git Hub Logo" src="images/githublogo.png">
+    </a>
+</footer>
 </div>
 </body>
 </html>

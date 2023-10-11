@@ -1,6 +1,6 @@
 body{
     background-image: url(images/mountainrange.jpg);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     font-family: 'Arial Narrow', Arial, sans-serif;
     margin: 0;
@@ -46,6 +46,7 @@ fieldset {
     flex-wrap: wrap;
 }
 .form_look {
+    margin-bottom: auto;
     background-color: rgb(255, 255, 255);
     width: 950px;
     min-width: 500px;
@@ -53,6 +54,10 @@ fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.top-of-form {
+    margin-top: 200px;
 }
 header, .inside_form, .bottom{
     margin-left: 75px;
@@ -117,11 +122,38 @@ input {
     height: 30px;
     width: 200px;
 }
+
 [class^='valid'] {
     color: rgb(255, 0, 0);
     font-size: .75rem;
     font-style: oblique;
+    margin-top: -15px;
+    margin-bottom: 20px;
+    max-width: 200px;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    background-color: white;
+    max-height: 30px;
+    margin-top: auto;
+    font-size: .8rem;
+}
+a > img {
+    width: 15px;
+}
+
+#valid{
+    color: rgb(255, 0, 0);
+    font-size: .75rem;
+    font-style: oblique;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+
 button:hover {
     background-color: rgb(79, 134, 252);
     cursor: pointer;
@@ -135,19 +167,15 @@ input:active {
 input:hover {
     background-color: rgb(127, 168, 255, .3);
 }
-/*input:invalid {
-    border: solid rgb(255, 0, 0, .5);
-}
-input:valid {
-    border: solid rgba(0, 128, 0, .5);
-}
-input::selection {
-    border: solid rgb(127, 168, 255);
-}*/
+
 
 
 a{
     color: rgb(127, 168, 255);
+}
+a:hover {
+    color:  rgb(79, 134, 252);
+    cursor: pointer;
 }
 @media only screen and (max-width: 1383px) {
     .form_look {
@@ -158,5 +186,8 @@ a{
     }
     .placeholder{
         margin-bottom: 0;
+    }
+    .top-of-form {
+        margin-top: 20px;
     }
 }
